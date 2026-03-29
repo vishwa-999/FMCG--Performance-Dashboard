@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Croci Strategy Dashboard | Vishwa Y Bhatt</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Croci Collective Brand Palette */
+        :root {
+            --croci-black: #000000;
+            --croci-white: #FFFFFF;
+            --croci-neon: #94FF00; /* Their signature high-vis green */
+            --croci-gray: #1A1A1A;
+        }
+        .bg-croci-black { background-color: var(--croci-black); }
+        .text-croci-neon { color: var(--croci-neon); }
+        .border-croci-neon { border-color: var(--croci-neon); }
+        .bg-croci-neon { background-color: var(--croci-neon); }
+    </style>
+</head>
+<body class="bg-croci-black text-white font-sans antialiased p-6 md:p-12">
+
+    <div class="max-w-7xl mx-auto">
+        <header class="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 gap-6">
+            <div>
+                <h1 class="text-5xl font-black tracking-tighter uppercase italic">
+                    Performance <span class="text-croci-neon">Intelligence</span>
+                </h1>
+                <p class="text-gray-400 mt-2 font-medium tracking-widest uppercase text-xs">Architected by Vishwa Y Bhatt | Finance Transformation</p>
+            </div>
+            <div class="flex gap-4">
+                <div class="border border-white/20 px-4 py-2 text-xs font-bold uppercase tracking-widest">Live Q1 Data</div>
+                <div class="bg-croci-neon text-black px-4 py-2 text-xs font-black uppercase tracking-widest">Status: Optimized</div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-1 mb-12 border border-white/10">
+            <div class="p-10 border-b md:border-b-0 md:border-r border-white/10 hover:bg-white/5 transition">
+                <p class="text-gray-500 text-xs font-bold uppercase mb-4">Net Marketing Contribution</p>
+                <h2 class="text-6xl font-black italic">£482K</h2>
+                <p class="text-croci-neon text-xs font-bold mt-4">+18.2% vs Target</p>
+            </div>
+            <div class="p-10 border-b md:border-b-0 md:border-r border-white/10 hover:bg-white/5 transition">
+                <p class="text-gray-500 text-xs font-bold uppercase mb-4">Operational Efficiency</p>
+                <h2 class="text-6xl font-black italic">94%</h2>
+                <p class="text-gray-400 text-xs font-bold mt-4">Automation Enabled</p>
+            </div>
+            <div class="p-10 hover:bg-white/5 transition">
+                <p class="text-gray-500 text-xs font-bold uppercase mb-4">Cash Burn Velocity</p>
+                <h2 class="text-6xl font-black italic">Low</h2>
+                <p class="text-croci-neon text-xs font-bold mt-4">Optimal Inflow Alignment</p>
+            </div>
+        </div>
+
+        <div class="bg-croci-gray p-8 border border-white/5">
+            <h3 class="text-xl font-bold uppercase italic mb-8 tracking-tight">Channel Margin Scaling <span class="text-croci-neon font-black">//</span> Direct vs Events</h3>
+            <canvas id="crociChart" height="120"></canvas>
+        </div>
+
+        <footer class="mt-12 text-center border-t border-white/10 pt-8">
+            <p class="text-gray-600 text-[10px] uppercase tracking-[0.2em]">Built to demonstrate the integration of Finance, Data, and Brand Culture.</p>
+        </footer>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('crociChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6'],
+                datasets: [{
+                    label: 'Agency Performance Index',
+                    data: [65, 78, 90, 85, 95, 110],
+                    backgroundColor: '#94FF00',
+                    barThickness: 40,
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#666' } },
+                    x: { grid: { display: false }, ticks: { color: '#666' } }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
