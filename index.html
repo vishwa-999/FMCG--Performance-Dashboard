@@ -12,26 +12,19 @@
         .neon-border { border: 1px solid rgba(148, 255, 0, 0.2); }
         .neon-text { color: var(--croci-neon); }
         .bg-neon { background-color: var(--croci-neon); }
+        .font-mono-finance { font-family: 'Courier New', Courier, monospace; }
     </style>
 </head>
-<body class="p-4 md:p-10">
+<body class="p-4 md:p-10 antialiased">
 
     <div class="max-w-7xl mx-auto">
-        <header class="flex flex-col md:flex-row justify-between items-center mb-10 border-b border-white/10 pb-8 gap-6">
-            <div class="flex items-center gap-6">
-                <img src="https://github.com/vishwa-999.png" 
-                     class="w-24 h-24 rounded-full border-4 border-croci-neon shadow-lg shadow-neon/20" 
-                     alt="Vishwa Y Bhatt">
-                <div>
-                    <h1 class="text-4xl font-black italic uppercase tracking-tighter">Commercial <span class="neon-text text-5xl">Strategy Hub</span></h1>
-                    <p class="text-gray-500 font-mono text-xs mt-2 uppercase tracking-widest underline decoration-neon underline-offset-4">Decision-Ready Financial Architecture // Vishwa Y Bhatt</p>
-                    
-                    <div class="flex gap-2 mt-4 text-[10px] font-bold uppercase tracking-widest">
-                        <a href="https://linkedin.com/in/vishwabhatt" target="_blank" 
-                           class="px-4 py-2 border border-white hover:bg-white hover:text-black transition">LinkedIn</a>
-                        <a href="mailto:vishwaybhatt@gmail.com" 
-                           class="px-4 py-2 bg-neon text-black hover:bg-white transition">Email Me</a>
-                    </div>
+        <header class="flex flex-col md:flex-row justify-between items-start mb-10 border-b border-white/10 pb-8">
+            <div>
+                <h1 class="text-4xl font-black italic uppercase tracking-tighter">Commercial <span class="neon-text text-5xl">Strategy Hub</span></h1>
+                <p class="text-gray-500 font-mono text-xs mt-2 uppercase tracking-widest underline decoration-neon underline-offset-4">Decision-Ready Financial Architecture // Vishwa Y Bhatt</p>
+                <div class="flex gap-4 mt-6 text-[10px] font-bold uppercase tracking-widest">
+                    <a href="https://linkedin.com/in/vishwabhatt" target="_blank" class="px-4 py-2 border border-white hover:bg-white hover:text-black transition">LinkedIn</a>
+                    <a href="mailto:vishwaybhatt@gmail.com" class="px-4 py-2 bg-neon text-black hover:bg-white transition text-xs">Email Me</a>
                 </div>
             </div>
             <div class="mt-4 md:mt-0 flex gap-3 text-[10px] font-bold uppercase tracking-widest">
@@ -46,15 +39,15 @@
                 <h3 class="text-3xl font-black italic">£482K</h3>
                 <span class="neon-text text-[10px] font-bold">▲ 18% WoW</span>
             </div>
-            <div class="bg-croci-gray p-6 neon-border border-white/5">
-                <p class="text-gray-500 text-[10px] uppercase font-bold mb-1">Burn Velocity</p>
-                <h3 class="text-3xl font-black italic">Stable</h3>
-                <span class="text-gray-400 text-[10px] font-bold">Inflow Optimized</span>
+            <div class="bg-croci-gray p-6 neon-border border-white/5 text-gray-400">
+                <p class="text-[10px] uppercase font-bold mb-1">Burn Velocity (Monthly Cash Burn)</p>
+                <h3 class="text-3xl font-black italic text-gray-200">£12.5k /Mo</h3>
+                <span class="text-[10px] font-bold italic">Stabilized from £18K (Python Optimised)</span>
             </div>
             <div class="bg-croci-gray p-6 neon-border">
                 <p class="text-gray-500 text-[10px] uppercase font-bold mb-1">LTV : CAC</p>
                 <h3 class="text-3xl font-black italic neon-text">3.4x</h3>
-                <span class="text-gray-400 text-[10px] font-bold">Payback: 2.1 Mo</span>
+                <span class="text-gray-400 text-[10px] font-bold italic">Payback: 2.1 Mo</span>
             </div>
             <div class="bg-croci-gray p-6 neon-border">
                 <p class="text-gray-500 text-[10px] uppercase font-bold mb-1">EBITDA (Est)</p>
@@ -63,56 +56,68 @@
             </div>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-6 mb-8">
-            <div class="md:col-span-2 bg-croci-gray p-6 border border-white/5">
-                <h4 class="text-xs font-bold uppercase mb-6 italic neon-text tracking-widest">Channel Performance Breakdown</h4>
-                <table class="w-full text-left text-xs uppercase font-medium">
-                    <thead class="text-gray-500 border-b border-white/10">
-                        <tr><th class="pb-3">Channel</th><th class="pb-3">Spend</th><th class="pb-3">Revenue</th><th class="pb-3">ROAS</th><th class="pb-3 text-right">CAC</th></tr>
-                    </thead>
-                    <tbody class="text-gray-300">
-                        <tr class="border-b border-white/5 hover:bg-white/5 transition"><td class="py-4">Meta Ads</td><td class="py-4">£42K</td><td class="py-4">£155K</td><td class="py-4 text-white">3.7x</td><td class="py-4 text-right">£31.20</td></tr>
-                        <tr class="border-b border-white/5 hover:bg-white/5 transition"><td class="py-4">Google Search</td><td class="py-4">£18K</td><td class="py-4">£82K</td><td class="py-4 text-white">4.5x</td><td class="py-4 text-right">£24.80</td></tr>
-                        <tr class="border-b border-white/5 hover:bg-white/5 transition"><td class="py-4">Influencer</td><td class="py-4">£12K</td><td class="py-4">£22K</td><td class="py-4 text-red-500 italic">1.8x</td><td class="py-4 text-right">£54.10</td></tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="bg-croci-gray p-6 border border-white/5">
-                <h4 class="text-xs font-bold uppercase mb-6 italic text-gray-400 tracking-widest">Customer Funnel (Conv. Engine)</h4>
-                <div class="space-y-4">
-                    <div><p class="text-[10px] text-gray-500 mb-1">CR: First Purchase</p><div class="w-full bg-white/10 h-1"><div class="bg-neon h-1" style="width: 42%"></div></div></div>
-                    <div><p class="text-[10px] text-gray-500 mb-1">Repeat Rate (Wk 8)</p><div class="w-full bg-white/10 h-1"><div class="bg-white h-1" style="width: 68%"></div></div></div>
-                    <div class="pt-4 border-t border-white/10">
-                        <p class="text-[10px] text-gray-500">Churn Rate (Monthly)</p>
-                        <h5 class="text-2xl font-black italic">4.2%</h5>
-                    </div>
+        <div class="bg-croci-gray p-8 border border-neon/30 mb-8 font-mono-finance">
+            <h4 class="text-xs font-bold uppercase mb-6 italic neon-text tracking-[0.3em]">Python-Powered Cashflow Statement // IAS 7 Indirect Method (Live Audit Output)</h4>
+            <div class="text-[11px] md:text-sm space-y-2 border-l-2 border-neon pl-6">
+                <div class="flex justify-between"><span>Profit Before Tax (PBT):</span> <span class="font-bold">£250,000</span></div>
+                <div class="text-gray-500 italic mt-2">Adjustments for non-cash items:</div>
+                <div class="flex justify-between pl-4"><span>+ Depreciation & Amortization:</span> <span>£15,000</span></div>
+                <div class="text-gray-500 italic mt-2">Changes in Working Capital:</div>
+                <div class="flex justify-between pl-4 text-red-500"><span>- (Increase) in Trade Receivables:</span> <span>£(35,000)</span></div>
+                <div class="flex justify-between pl-4 text-neon"><span>+ Decrease in Inventory:</span> <span>£5,000</span></div>
+                <div class="flex justify-between pl-4 text-neon"><span>+ Increase in Trade Payables:</span> <span>£15,000</span></div>
+                <div class="border-t border-white/20 my-4"></div>
+                <div class="flex justify-between font-bold"><span>Cash Generated from Operations:</span> <span>£250,000</span></div>
+                <div class="flex justify-between text-gray-400 italic"><span>- Interest & Tax Paid:</span> <span>£(53,000)</span></div>
+                <div class="flex justify-between text-xl font-black neon-text bg-white/5 p-2 mt-4">
+                    <span>NET OPERATING CASH FLOW:</span> <span>£197,000</span>
                 </div>
             </div>
         </div>
 
-        <div class="grid md:grid-cols-4 gap-6 mb-8 text-xs font-bold">
-            <div class="md:col-span-3 bg-croci-gray p-6 border border-white/5">
-                <h4 class="text-xs font-bold uppercase mb-6 italic tracking-widest">Growth vs Profit Strategy</h4>
-                <canvas id="growthChart" height="80"></canvas>
+        <div class="grid md:grid-cols-3 gap-6 mb-8">
+            <div class="md:col-span-2 bg-croci-gray p-6 border border-white/5 hover:bg-white/5 transition">
+                <h4 class="text-xs font-bold uppercase mb-6 italic neon-text tracking-widest">Channel Performance Breakdown (Scale vs Efficiency)</h4>
+                <table class="w-full text-left text-xs uppercase font-medium">
+                    <thead class="text-gray-500 border-b border-white/10 text-[10px]">
+                        <tr><th class="pb-3">Channel</th><th class="pb-3">Spend</th><th class="pb-3">Revenue</th><th class="pb-3">ROAS</th><th class="pb-3 text-right">CAC</th></tr>
+                    </thead>
+                    <tbody class="text-gray-300">
+                        <tr class="border-b border-white/5 transition"><td class="py-4 font-black">Meta Ads</td><td class="py-4">£42K</td><td class="py-4">£155K</td><td class="py-4 text-white">3.7x</td><td class="py-4 text-right">£31.20</td></tr>
+                        <tr class="border-b border-white/5 transition"><td class="py-4 font-black">Google Search</td><td class="py-4">£18K</td><td class="py-4">£82K</td><td class="py-4 text-white">4.5x</td><td class="py-4 text-right">£24.80</td></tr>
+                        
+                        <tr class="border-b border-white/5 transition text-croci-neon/70"><td class="py-4 font-black italic">TikTok (Spark Ads)</td><td class="py-4">£25K</td><td class="py-4">£68K</td><td class="py-4 text-white">2.7x</td><td class="py-4 text-right">£38.10</td></tr>
+                        <tr class="border-b border-white/5 transition text-croci-neon/70"><td class="py-4 font-black italic">UGC Creator Network</td><td class="py-4">£15K</td><td class="py-4">£21K</td><td class="py-4 text-red-500 italic">1.4x</td><td class="py-4 text-right">£62.00</td></tr>
+                    
+                        <tr class="border-b border-white/5 transition"><td class="py-4 font-black">Influencer</td><td class="py-4">£12K</td><td class="py-4">£22K</td><td class="py-4 text-red-500 italic font-bold tracking-tighter">1.8x [LOW]</td><td class="py-4 text-right">£54.10</td></tr>
+                    </tbody>
+                </table>
             </div>
+            
             <div class="bg-croci-gray p-6 border-l-2 border-neon flex flex-col justify-between">
                 <div>
-                    <h4 class="text-[10px] uppercase mb-4 text-neon tracking-[0.2em]">Decision Alerts</h4>
-                    <ul class="space-y-3 font-mono text-[10px] leading-relaxed">
+                    <h4 class="text-[10px] uppercase mb-4 text-neon tracking-[0.2em] font-bold">Strategic Decision alerts</h4>
+                    <ul class="space-y-4 font-mono text-[10px] leading-relaxed italic">
                         <li class="text-red-500">⚠ CAC INCREASED 18% WOW</li>
-                        <li class="text-white">⚠ META ROAS BELOW 2.5X TARGET</li>
-                        <li class="text-neon">✅ EMAIL OUTPERFORMING (4.2X)</li>
+                        <li class="text-white border-b border-white/10 pb-2">⚠ META ROAS BELOW 2.5X TARGET</li>
+                        <li class="text-neon border-b border-neon/10 pb-2">✅ UGC CHANNEL: SCALE-UP CAUTION (ROAS 1.4X)</li>
+                        <li class="text-neon font-black">✅ EMAIL OUTPERFORMING (4.2X)</li>
                     </ul>
                 </div>
                 <div class="pt-6 mt-6 border-t border-white/10">
-                    <p class="text-[9px] text-gray-500 uppercase">Forecast Q2 Revenue</p>
+                    <p class="text-[9px] text-gray-500 uppercase">Q2 Growth Forecast</p>
                     <p class="text-xl font-black neon-text">£1.85M (+22%)</p>
                 </div>
             </div>
         </div>
 
+        <div class="bg-croci-gray p-8 border border-white/5 mb-8">
+            <h4 class="text-xs font-bold uppercase mb-8 italic tracking-widest text-gray-200">Growth vs Profit Trade-off (CEO Cockpit View)</h4>
+            <canvas id="growthChart" height="100"></canvas>
+        </div>
+
         <footer class="text-center py-10 border-t border-white/10">
-            <p class="text-[10px] uppercase tracking-[0.4em] text-gray-600 italic">Built to drive real-time commercial decisions across growth, cost, and profitability.</p>
+            <p class="text-[10px] uppercase tracking-[0.4em] text-gray-600 italic">"Built to drive real-time commercial decisions across growth, cost, and profitability."</p>
         </footer>
     </div>
 
@@ -121,13 +126,19 @@
         new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ['M1', 'M2', 'M3', 'M4', 'M5'],
+                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5'],
                 datasets: [
-                    { label: 'Revenue Growth', data: [10, 25, 45, 60, 85], borderColor: '#94FF00', tension: 0.4 },
-                    { label: 'Net Margin %', data: [30, 28, 25, 22, 24], borderColor: '#FFFFFF', tension: 0.4 }
+                    { label: 'Revenue Growth (£k)', data: [100, 125, 145, 160, 185], borderColor: '#94FF00', tension: 0.4 },
+                    { label: 'Net Operating Margin %', data: [30, 28, 25, 22, 24], borderColor: '#FFFFFF', tension: 0.4 }
                 ]
             },
-            options: { plugins: { legend: { display: false } }, scales: { y: { display: false }, x: { grid: { display: false }, ticks: { color: '#444' } } } }
+            options: { 
+                plugins: { legend: { labels: { color: 'white', font: { size: 10 } } } }, 
+                scales: { 
+                    y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#666' } }, 
+                    x: { grid: { display: false }, ticks: { color: '#666' } } 
+                } 
+            }
         });
     </script>
 </body>
