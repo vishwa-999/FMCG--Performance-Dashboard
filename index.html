@@ -3,88 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Croci Strategy Dashboard | Vishwa Y Bhatt</title>
+    <title>Vishwa Y Bhatt | Strategic Finance Cockpit</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Croci Collective Brand Palette */
-        :root {
-            --croci-black: #000000;
-            --croci-white: #FFFFFF;
-            --croci-neon: #94FF00; /* Their signature high-vis green */
-            --croci-gray: #1A1A1A;
-        }
-        .bg-croci-black { background-color: var(--croci-black); }
-        .text-croci-neon { color: var(--croci-neon); }
-        .border-croci-neon { border-color: var(--croci-neon); }
-        .bg-croci-neon { background-color: var(--croci-neon); }
+        :root { --croci-black: #000000; --croci-neon: #94FF00; --croci-gray: #111111; }
+        body { background-color: var(--croci-black); color: white; font-family: 'Inter', sans-serif; }
+        .neon-border { border: 1px solid rgba(148, 255, 0, 0.2); }
+        .neon-text { color: var(--croci-neon); }
+        .bg-neon { background-color: var(--croci-neon); }
     </style>
 </head>
-<body class="bg-croci-black text-white font-sans antialiased p-6 md:p-12">
+<body class="p-4 md:p-10">
 
     <div class="max-w-7xl mx-auto">
-        <header class="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 gap-6">
+        <header class="flex flex-col md:flex-row justify-between items-start mb-10 border-b border-white/10 pb-8">
             <div>
-                <h1 class="text-5xl font-black tracking-tighter uppercase italic">
-                    Performance <span class="text-croci-neon">Intelligence</span>
-                </h1>
-                <p class="text-gray-400 mt-2 font-medium tracking-widest uppercase text-xs">Architected by Vishwa Y Bhatt | Finance Transformation</p>
+                <h1 class="text-4xl font-black italic uppercase tracking-tighter">Commercial <span class="neon-text text-5xl">Strategy Hub</span></h1>
+                <p class="text-gray-500 font-mono text-xs mt-2 uppercase tracking-widest underline decoration-neon underline-offset-4">Decision-Ready Financial Architecture // Vishwa Y Bhatt</p>
             </div>
-            <div class="flex gap-4">
-                <div class="border border-white/20 px-4 py-2 text-xs font-bold uppercase tracking-widest">Live Q1 Data</div>
-                <div class="bg-croci-neon text-black px-4 py-2 text-xs font-black uppercase tracking-widest">Status: Optimized</div>
+            <div class="mt-4 md:mt-0 flex gap-3 text-[10px] font-bold uppercase tracking-widest">
+                <div class="px-3 py-1 neon-border">Mode: Strategic Growth</div>
+                <div class="px-3 py-1 bg-neon text-black">Live Forecast Active</div>
             </div>
         </header>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-1 mb-12 border border-white/10">
-            <div class="p-10 border-b md:border-b-0 md:border-r border-white/10 hover:bg-white/5 transition">
-                <p class="text-gray-500 text-xs font-bold uppercase mb-4">Net Marketing Contribution</p>
-                <h2 class="text-6xl font-black italic">£482K</h2>
-                <p class="text-croci-neon text-xs font-bold mt-4">+18.2% vs Target</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div class="bg-croci-gray p-6 neon-border">
+                <p class="text-gray-500 text-[10px] uppercase font-bold mb-1">Net Contribution</p>
+                <h3 class="text-3xl font-black italic">£482K</h3>
+                <span class="neon-text text-[10px] font-bold">▲ 18% WoW</span>
             </div>
-            <div class="p-10 border-b md:border-b-0 md:border-r border-white/10 hover:bg-white/5 transition">
-                <p class="text-gray-500 text-xs font-bold uppercase mb-4">Operational Efficiency</p>
-                <h2 class="text-6xl font-black italic">94%</h2>
-                <p class="text-gray-400 text-xs font-bold mt-4">Automation Enabled</p>
+            <div class="bg-croci-gray p-6 neon-border border-white/5">
+                <p class="text-gray-500 text-[10px] uppercase font-bold mb-1">Burn Velocity</p>
+                <h3 class="text-3xl font-black italic">Stable</h3>
+                <span class="text-gray-400 text-[10px] font-bold">Inflow Optimized</span>
             </div>
-            <div class="p-10 hover:bg-white/5 transition">
-                <p class="text-gray-500 text-xs font-bold uppercase mb-4">Cash Burn Velocity</p>
-                <h2 class="text-6xl font-black italic">Low</h2>
-                <p class="text-croci-neon text-xs font-bold mt-4">Optimal Inflow Alignment</p>
+            <div class="bg-croci-gray p-6 neon-border">
+                <p class="text-gray-500 text-[10px] uppercase font-bold mb-1">LTV : CAC</p>
+                <h3 class="text-3xl font-black italic neon-text">3.4x</h3>
+                <span class="text-gray-400 text-[10px] font-bold">Payback: 2.1 Mo</span>
+            </div>
+            <div class="bg-croci-gray p-6 neon-border">
+                <p class="text-gray-500 text-[10px] uppercase font-bold mb-1">EBITDA (Est)</p>
+                <h3 class="text-3xl font-black italic">£112K</h3>
+                <span class="neon-text text-[10px] font-bold">Margin: 24.2%</span>
             </div>
         </div>
 
-        <div class="bg-croci-gray p-8 border border-white/5">
-            <h3 class="text-xl font-bold uppercase italic mb-8 tracking-tight">Channel Margin Scaling <span class="text-croci-neon font-black">//</span> Direct vs Events</h3>
-            <canvas id="crociChart" height="120"></canvas>
+        <div class="grid md:grid-cols-3 gap-6 mb-8">
+            <div class="md:col-span-2 bg-croci-gray p-6 border border-white/5">
+                <h4 class="text-xs font-bold uppercase mb-6 italic neon-text tracking-widest">Channel Performance Breakdown</h4>
+                <table class="w-full text-left text-xs uppercase font-medium">
+                    <thead class="text-gray-500 border-b border-white/10">
+                        <tr><th class="pb-3">Channel</th><th class="pb-3">Spend</th><th class="pb-3">Revenue</th><th class="pb-3">ROAS</th><th class="pb-3 text-right">CAC</th></tr>
+                    </thead>
+                    <tbody class="text-gray-300">
+                        <tr class="border-b border-white/5 hover:bg-white/5 transition"><td class="py-4">Meta Ads</td><td class="py-4">£42K</td><td class="py-4">£155K</td><td class="py-4 text-white">3.7x</td><td class="py-4 text-right">£31.20</td></tr>
+                        <tr class="border-b border-white/5 hover:bg-white/5 transition"><td class="py-4">Google Search</td><td class="py-4">£18K</td><td class="py-4">£82K</td><td class="py-4 text-white">4.5x</td><td class="py-4 text-right">£24.80</td></tr>
+                        <tr class="border-b border-white/5 hover:bg-white/5 transition"><td class="py-4">Influencer</td><td class="py-4">£12K</td><td class="py-4">£22K</td><td class="py-4 text-red-500 italic">1.8x</td><td class="py-4 text-right">£54.10</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bg-croci-gray p-6 border border-white/5">
+                <h4 class="text-xs font-bold uppercase mb-6 italic text-gray-400 tracking-widest">Customer Funnel (Conv. Engine)</h4>
+                <div class="space-y-4">
+                    <div><p class="text-[10px] text-gray-500 mb-1">CR: First Purchase</p><div class="w-full bg-white/10 h-1"><div class="bg-neon h-1" style="width: 42%"></div></div></div>
+                    <div><p class="text-[10px] text-gray-500 mb-1">Repeat Rate (Wk 8)</p><div class="w-full bg-white/10 h-1"><div class="bg-white h-1" style="width: 68%"></div></div></div>
+                    <div class="pt-4 border-t border-white/10">
+                        <p class="text-[10px] text-gray-500">Churn Rate (Monthly)</p>
+                        <h5 class="text-2xl font-black italic">4.2%</h5>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <footer class="mt-12 text-center border-t border-white/10 pt-8">
-            <p class="text-gray-600 text-[10px] uppercase tracking-[0.2em]">Built to demonstrate the integration of Finance, Data, and Brand Culture.</p>
+        <div class="grid md:grid-cols-4 gap-6 mb-8 text-xs font-bold">
+            <div class="md:col-span-3 bg-croci-gray p-6 border border-white/5">
+                <h4 class="text-xs font-bold uppercase mb-6 italic tracking-widest">Growth vs Profit Strategy</h4>
+                <canvas id="growthChart" height="80"></canvas>
+            </div>
+            <div class="bg-croci-gray p-6 border-l-2 border-neon flex flex-col justify-between">
+                <div>
+                    <h4 class="text-[10px] uppercase mb-4 text-neon tracking-[0.2em]">Decision Alerts</h4>
+                    <ul class="space-y-3 font-mono text-[10px] leading-relaxed">
+                        <li class="text-red-500">⚠ CAC INCREASED 18% WOW</li>
+                        <li class="text-white">⚠ META ROAS BELOW 2.5X TARGET</li>
+                        <li class="text-neon">✅ EMAIL OUTPERFORMING (4.2X)</li>
+                    </ul>
+                </div>
+                <div class="pt-6 mt-6 border-t border-white/10">
+                    <p class="text-[9px] text-gray-500 uppercase">Forecast Q2 Revenue</p>
+                    <p class="text-xl font-black neon-text">£1.85M (+22%)</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center py-10 border-t border-white/10">
+            <p class="text-[10px] uppercase tracking-[0.4em] text-gray-600 italic">Built to drive real-time commercial decisions across growth, cost, and profitability.</p>
         </footer>
     </div>
 
     <script>
-        const ctx = document.getElementById('crociChart').getContext('2d');
+        const ctx = document.getElementById('growthChart').getContext('2d');
         new Chart(ctx, {
-            type: 'bar',
+            type: 'line',
             data: {
-                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6'],
-                datasets: [{
-                    label: 'Agency Performance Index',
-                    data: [65, 78, 90, 85, 95, 110],
-                    backgroundColor: '#94FF00',
-                    barThickness: 40,
-                }]
+                labels: ['M1', 'M2', 'M3', 'M4', 'M5'],
+                datasets: [
+                    { label: 'Revenue Growth', data: [10, 25, 45, 60, 85], borderColor: '#94FF00', tension: 0.4 },
+                    { label: 'Net Margin %', data: [30, 28, 25, 22, 24], borderColor: '#FFFFFF', tension: 0.4 }
+                ]
             },
-            options: {
-                responsive: true,
-                plugins: { legend: { display: false } },
-                scales: {
-                    y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#666' } },
-                    x: { grid: { display: false }, ticks: { color: '#666' } }
-                }
-            }
+            options: { plugins: { legend: { display: false } }, scales: { y: { display: false }, x: { grid: { display: false }, ticks: { color: '#444' } } } }
         });
     </script>
 </body>
